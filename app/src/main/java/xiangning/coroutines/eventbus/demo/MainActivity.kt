@@ -1,14 +1,13 @@
-package xiangning.coroutines.eventbus
+package xiangning.coroutines.eventbus.demo
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import kotlinx.coroutines.*
-import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onCompletion
 import kotlinx.coroutines.flow.onEach
-import java.util.concurrent.Executors
+import xiangning.coroutines.eventbus.EventBus
 
 class MainActivity : AppCompatActivity() {
 
