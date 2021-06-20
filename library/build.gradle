@@ -4,6 +4,11 @@ plugins {
     id 'maven-publish'
 }
 
+version = '1.0.1'
+java {
+    withSourcesJar()
+}
+
 java {
     sourceCompatibility = JavaVersion.VERSION_1_7
     targetCompatibility = JavaVersion.VERSION_1_7
@@ -19,7 +24,9 @@ publishing {
         maven(MavenPublication) {
             groupId = 'xiangning.coroutines'
             artifactId = 'flow-extension-eventbus'
-            version = '1.0'
+            version = project.version
+
+            from components.java
         }
     }
 }
