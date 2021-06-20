@@ -19,7 +19,7 @@ allprojects {
 2. add dependency for this library in module build.gradle：
 ```groovy
 dependencies {
-    implementation 'com.github.xiangning17:eventbus:1.0'
+    implementation 'com.github.xiangning17:eventbus:1.0.1'
 }
 ```
 
